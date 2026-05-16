@@ -8,34 +8,41 @@
     <title>Cadastrar</title>
 </head>
 <body>
-    <header>
-        Cadastrar-se
-    </header>
-    <main>
-        <form>
-            <h1>Cadastrar</h1>
-            <div>
-                <label for="nomeCompleto">Nome Completo</label>
-                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Senha">
-            </div>
-            <div>
-                <label for="tipoPerfil">Tipo de perfil</label>
-                <select name="tipoPerfil" id="tipoPerfil">
-                    <option value="" selected disabled>Selecione o tipo do perfil</option>
-                    <option value="administrador">Administrador</option>
-                    <option value="psicologo">Psicólogo</option>
-                </select>
-            </div>
-            <button type="submit">Confirmar Cadastro</button>
-        </form>
-    </main>
+    <div class="container">
+        <header>
+            logotipo
+        </header>
+        <main>
+            <form>
+                <div class="formTitle">
+                    <h1>Criar um conta</h1>
+                    <p>No *nome-do-site você pode realizar a gestão de sua clínica de forma fácil e rápida.</p>
+                </div>
+                <div>
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <div>
+                    <label for="tipoPerfil">Quem você é?</label>
+                    <select name="tipoPerfil" id="tipoPerfil">
+                        <option value="" selected disabled>Selecione o tipo do perfil</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="psicologo">Psicólogo</option>
+                    </select>
+                </div>
+                <button type="submit">Confirmar Cadastro</button>
+                <hr>
+                <p class="linkLogin">Já possui uma conta? <a href="/login">Fazer login</a></p>
+            </form>
+        </main>
+    </div>
 </body>
 </html>

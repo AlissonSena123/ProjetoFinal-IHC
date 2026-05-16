@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "Lexend";
+    src: url(../fonts/Lexend-VariableFont_wght.ttf);
+}
+
 :root{
     --cor-bg: #5798A1;
-    --cor-bg-secondaria: #092837;
+    --cor-bg-secondaria: #105773;
     --cor-bg-escura: #092837;
     --cor-input: #DEDEDE;
 }
@@ -9,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend";
 }
 
 body{
