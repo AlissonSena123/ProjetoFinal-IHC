@@ -1,0 +1,20 @@
+:root{
+    --cor-bg: #5798A1;
+    --cor-bg-secondaria: #092837;
+    --cor-bg-escura: #092837;
+    --cor-input: #DEDEDE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header  { grid-area: header; }
+main    { grid-area: main;   }
+footer  { grid-area: footer; }

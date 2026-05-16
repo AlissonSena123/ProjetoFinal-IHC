@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/cadastro.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <header>
+        Cadastrar-se
+    </header>
+    <main>
+        <form>
+            <h1>Cadastrar</h1>
+            <div>
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Nome completo">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <div>
+                <label for="tipoPerfil">Tipo de perfil</label>
+                <select name="tipoPerfil" id="tipoPerfil">
+                    <option value="" selected disabled>Selecione o tipo do perfil</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="psicologo">Psicólogo</option>
+                </select>
+            </div>
+            <button type="submit">Confirmar Cadastro</button>
+        </form>
+    </main>
+</body>
+</html>
