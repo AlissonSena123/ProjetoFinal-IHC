@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/login.css">
     <title>Entrar</title>
 </head>
 <body>
-    <header>Login</header>
-    <main>
-        <h1></h1>
-    </main>
+    <div class="container">
+        <header>logotipo</header>
+        <main>
+            <form>
+                <h1>Entrar</h1>
+                <div class="formBody">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="@email.com">
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="*************">
+                    </div>
+                </div>
+                <button type="submit">Entrar</button>
+                <hr>
+                <p>Ainda não possui uma conta? <a href="/cadastrar">Cadastre-se</a></p>
+            </form>
+        </main>
+    </div>
 </body>
 </html>

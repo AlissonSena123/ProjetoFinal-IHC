@@ -6,9 +6,8 @@ body{
 .container{
     display: grid;
     grid-template-areas: 
-    "header"
     "main";
-    grid-template-rows: max-content 1fr;
+    grid-template-rows: 1fr;
     background: linear-gradient(
         to bottom, 
         color-mix(in srgb, var(--cor-bg) 80%, transparent), 
