@@ -57,7 +57,7 @@ form div.formBody{
     padding: 10px 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 div.formBody div{
@@ -66,10 +66,19 @@ div.formBody div{
     gap: 2px;
 }
 
+div.formBody div label{
+    cursor: pointer;
+    width: max-content;
+}
+
 div.formBody div input{
     padding: 16px;
     border-radius: 7px;
-    border: 1px solid var(--cor-input);
+    border: 1px solid var(--cor-bg-secondaria);
+}
+
+form div.formBody a{
+    text-align: end;
 }
 
 form button{
@@ -91,3 +100,4 @@ form p{
     text-align: center;
     margin: 0px 20px 20px 20px;
 }
+

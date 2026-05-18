@@ -61,7 +61,7 @@ form div label{
 
 form div input, select{
     padding: 16px;
-    border: 1px solid var(--cor-input);
+    border: 1px solid var(--cor-bg-secondaria);
     border-radius: 7px;
     width: 100%;
 }
