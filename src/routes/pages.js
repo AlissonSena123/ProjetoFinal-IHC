@@ -1,9 +1,28 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
 const router = express.Router();
 
-router.get("/cadastrar", (req, res) => res.sendFile(path.join(__dirname, "../../views/cadastro.html")));
-router.get("/login", (req, res) => res.sendFile(path.join(__dirname, "../../views/login.html")));
-router.get("/inicio", (req, res) => res.sendFile(path.join(__dirname, "../../views/inicio.html")));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = router;
+router.get("/cadastrar", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../../views/cadastro.html")
+  );
+});
+
+router.get("/login", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../../views/login.html")
+  );
+});
+
+router.get("/inicio", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../../views/inicio.html")
+  );
+});
+
+export default router;

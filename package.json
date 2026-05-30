@@ -13,13 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AlissonSena123/ProjetoFinal-IHC/issues"
   },
   "homepage": "https://github.com/AlissonSena123/ProjetoFinal-IHC#readme",
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
+    "expres": "^0.0.5",
     "express": "^4.22.2"
   }
 }
