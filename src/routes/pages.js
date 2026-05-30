@@ -1,9 +1,18 @@
-const express = require("express");
-const path = require("path");
-const router = express.Router();
+import { Router } from "express";
+import { join } from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 
-router.get("/cadastrar", (req, res) => res.sendFile(path.join(__dirname, "../../views/cadastro.html")));
-router.get("/login", (req, res) => res.sendFile(path.join(__dirname, "../../views/login.html")));
-router.get("/inicio", (req, res) => res.sendFile(path.join(__dirname, "../../views/inicio.html")));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-module.exports = router;
+const router = Router();
+
+router.get("/cadastrar", (req, res) => res.sendFile(join(__dirname, "../../views/cadastro.html")));
+router.get("/login", (req, res) => res.sendFile(join(__dirname, "../../views/login.html")));
+router.get("/inicio", (req, res) => res.sendFile(join(__dirname, "../../views/inicio.html")));
+router.get("/agendar/sessao", (req, res) => res.sendFile(join(__dirname, "../../views/agendarSessao.html")));
+router.get("/cadastrar/paciente", (req, res) => res.sendFile(join(__dirname, "../../views/cadastrarPaciente.html")));
+router.get("/agenda", (req, res) => res.sendFile(join(__dirname, "../../views/agenda.html")));
+
+export default router;
