@@ -1,0 +1,80 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(2, max-content) 1fr max-content;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    background-color: var(--cor-bg-escura);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+nav{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--cor-input);
+    gap: 10px;
+    background-color: rgba(229, 255, 247, 0.625);
+}
+
+nav a{
+    background-color: var(--cor-bg);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+nav a i{
+    font-size: 1.5rem;
+}
+
+main{
+    padding: 20px;
+}
+
+nav a:hover{
+    background-color: var(--cor-bg-escura);
+}
+
+footer{
+    border-top: 1px solid var(--cor-input);
+    padding: 15px;
+    color: var(--cor-bg-escura);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    nav{
+        grid-template-columns: 1fr;
+    }
+}
