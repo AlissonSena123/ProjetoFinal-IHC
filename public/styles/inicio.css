@@ -23,37 +23,41 @@ header h1{
     color: white;
 }
 
-header a{
+header > a{
     text-decoration: none;
     color: white;
     font-size: 2.5rem;
 }
 
 nav{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid var(--cor-input);
-    gap: 10px;
-    background-color: rgba(229, 255, 247, 0.625);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav div{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+nav div a{
+    font-size: .9rem;
 }
 
 nav a{
-    background-color: var(--cor-bg);
-    padding: 15px;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
     transition: .2s;
 }
 
 nav a i{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 main{
