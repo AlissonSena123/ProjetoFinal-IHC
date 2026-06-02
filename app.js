@@ -3,7 +3,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import pages from "./src/routes/pages.js";
-import testeRouter from "./api/teste.js"
+import testeRouter from "./api/teste.js";
+import authRoutes from "./src/routes/authRoutes.js"
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
