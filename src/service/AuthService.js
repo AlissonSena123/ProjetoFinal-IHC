@@ -1,15 +1,24 @@
-export default class Authservice {
+import supabase from "../config/supabase.js";
 
-    constructor (authRepository) {
-        this.authRepository = authRepository;
+//Service onde ele usa o comando do supabase para logar com senha que ja verifica no banco
+export default class AuthService {
+
+    async login(email, password) {
+
+        const { data: {user}, error } =
+        await supabase.auth.signInWithPassword({
+            email,
+            password
+        });
+
+        if(error){
+            throw new Error(
+                "Email ou senha inválidos"
+            );
+        };
+
+        return user;
+
     };
 
-    async autenticar(email) {
-
-        const usuario = await this.authRepository.buscarPorEmail(email);
-
-        if (!usuario) throw new Error("Usuário não encontrado!");
-
-        return usuario;
-    }
 };
