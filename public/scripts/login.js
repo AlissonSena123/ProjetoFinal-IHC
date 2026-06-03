@@ -32,7 +32,11 @@ form.addEventListener(
         const data =
         await response.json();
 
+        console.log("RESPOSTA LOGIN:", data);
+
         if (data.sucesso) {
+            
+            console.log("LOGIN SUCESSO")
 
             localStorage.setItem(
                 "usuario",
@@ -41,8 +45,9 @@ form.addEventListener(
                 )
             );
 
+
             window.location.href =
-            "/inicio";
+            "/inicio.html";
 
         } else {
 

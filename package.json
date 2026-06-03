@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/AlissonSena123/ProjetoFinal-IHC#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^2.105.4",
+    "@supabase/supabase-js": "^2.107.0",
     "express": "^4.22.2"
   }
 }

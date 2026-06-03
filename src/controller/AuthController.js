@@ -8,32 +8,38 @@ export default class AuthController {
 
     static async login(req, res){
 
-        console.log("LOGIN CHAMADO");
+    console.log("LOGIN CHAMADO");
 
-        try{
+    try{
 
-            const {email, password} = req.body;
+        const { email, password } = req.body;
 
-            const usuario =
-            await authService.login(
-                email,
-                password
-            );
+        console.log("EMAIL:", email);
 
-            return res.status(200).json({
-                sucesso:true,
-                usuario
-            });
+        const usuario =
+        await authService.login(
+            email,
+            password
+        );
 
-        }catch(error){
+        console.log("USUARIO:", usuario);
+        console.log("ENVIANDO RESPOSTA");
+        return res.status(200).json({
+            sucesso:true,
+            usuario
+        });
 
-            return res.status(401).json({
-                sucesso:false,
-                mensagem:error.message
-            });
+    }catch(error){
 
-        }
+        console.error(error);
+
+        return res.status(401).json({
+            sucesso:false,
+            mensagem:error.message
+        });
 
     }
+
+}
 
 }

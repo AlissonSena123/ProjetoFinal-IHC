@@ -1,6 +1,5 @@
 import AuthController from "../../src/controller/AuthController.js";
 
-
 export default async function handler(req, res) {
 
     if (req.method !== "POST") {
