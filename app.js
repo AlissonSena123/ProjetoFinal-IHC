@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(pages);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 
 app.listen(PORT, () => {
   console.log(

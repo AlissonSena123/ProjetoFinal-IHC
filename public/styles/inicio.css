@@ -11,6 +11,10 @@
     "footer";
 }
 
+.navContent{
+    display: none;
+}
+
 header{
     background-color: var(--cor-bg-escura);
     padding: 20px;
@@ -30,20 +34,18 @@ header > a{
 }
 
 nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 nav div{
     justify-self: center;
     align-self: center;
-    padding: 10px;
 }
 
 nav div a{
-    font-size: .9rem;
+    font-size: 1.05rem;
 }
 
 nav a{
@@ -57,15 +59,15 @@ nav a{
 }
 
 nav a i{
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+nav a i.ph-caret-down{
+    font-size: .9rem;
 }
 
 main{
     padding: 20px;
-}
-
-nav a:hover{
-    background-color: var(--cor-bg-escura);
 }
 
 footer{
@@ -75,10 +77,4 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media screen and (max-width: 700px) {
-    nav{
-        grid-template-columns: 1fr;
-    }
 }
